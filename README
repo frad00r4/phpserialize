@@ -1,0 +1,32 @@
+PHPSerilize
+
+Library for decode/encode PHP session string
+
+
+Functions:
+
+session_t *phpserialize_session_decode( const char *session );
+
+Decode php session string session to struct session_t, please lock phpsession.h for detail.
+
+==================================================================
+
+char *phpserialize_session_encode( session_t *session );
+
+Encode struct session_t to php session string.
+
+==================================================================
+
+void phpserialize_session_destroy( session_t **session );
+
+Destroy struct session_t
+
+==================================================================
+
+Build:
+
+for build library
+$make all
+
+for build test binary
+$make test
