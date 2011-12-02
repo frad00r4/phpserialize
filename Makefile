@@ -8,7 +8,7 @@ all:
 	$(CC) -shared -fPIC -o $(OUT) *.o
 
 clean:
-	rm -f $(OUT) *.o
+	rm -f $(OUT) *.o test
 
 test:
 	$(CC) $(OPT) -o test *.c
