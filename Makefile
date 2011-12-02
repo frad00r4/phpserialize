@@ -1,6 +1,6 @@
 CC=gcc
 #OPT= -g
-SRC=phpserialize.c
+SRC=phpserialize*.c
 OUT=phpserialize.so
 
 all:
